@@ -1,50 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/index.css">
+    <script src="assets/js/script.js" defer></script>
     <title>Sistema de Mercado</title>
 </head>
 
 <body>
     <header>
-        <h1>B-System</h1>
+        <h1>B-System  Mercado</h1>
     </header>
     <main>
         <section>
-
+            <ul id="listaDeCompra">
+                <li>Breno / R$ = 12.00 / 2un</li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
         </section>
         <aside>
             <p>Informaçôes</p>
             <div id="infPart1">
                 <div class="caixasInformacoes">
                     <label for="">Côdigo do produto</label>
-                    <input placeholder="digite o codigo" type="text">
+                    <input id="codigo" placeholder="digite o codigo" type="text">
                 </div>
 
                 <div class="caixasInformacoes">
                     <label for="">Valor do produto</label>
-                    <input type="text">
+                    <div id="valor" class="input">0,00</div>
                 </div>
 
                 <div class="caixasInformacoes">
                     <label for="">Valor recebido</label>
-                    <input type="text">
+                    <input id="valorRecebido" type="number">
                 </div>
 
                 <div class="caixasInformacoes">
                     <label for="">Troco</label>
-                    <input type="text">
+                    <div id="troco" class="input">0,00</div>
                 </div>
             </div>
             <div id="infPart2">
                 <div id="divSubtotal">
                     <label for="">SUBTOTAL</label>
-                    <input type="number" name="" id="">
+                    <div id="subtotal" class="inputSub">0,00</div>
                 </div>
-                <button>Finalizar</button>
+                <div id="DivButton">
+                    <button id="botao">Finalizar</button>
+                </div>
             </div>
         </aside>
     </main>

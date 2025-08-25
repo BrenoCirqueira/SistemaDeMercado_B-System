@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 :root{
     --cor1: rgb(73, 73, 226);
@@ -66,19 +67,25 @@ aside{
     label{
         font-size: 1.5rem ;
     }
-    input{
-        border:1px solid black ;
-        border-radius:10px;
-        height: 50px;
+    input, .input{
+        width: 100%;
+        height: 60px;
         text-align: end;
         padding: 20px;
         font-size: 2rem;
+        border:1px solid black ;
+        border-radius:10px;
+        background-color: white;
+        align-items: center
     }
 }
 
 #infPart2{
         background-color: rgb(16, 33, 0);
         height: 30%;
+        display: flex;
+        flex-direction:column;
+
     }
 
 #divSubtotal{
@@ -94,7 +101,7 @@ aside{
         font-weight: bold;
         font-size: 1.5rem ;
     }
-    input{
+    .inputSub{
         width: 100%;
         height: 60px;
         text-align: end;
@@ -102,7 +109,24 @@ aside{
         font-size: 2rem;
         border:1px solid black ;
         border-radius:10px;
+        background-color: white;
+        align-items: center
     }
 }
 
-button
+#DivButton{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    width: 200px;
+    height: 80px;
+    background-color: rgb(14, 73, 17);
+    border: 2px solid black;
+    border-radius: 12px;
+    font-size: 2rem;
+}
